@@ -6,7 +6,7 @@ This project models linguistic relationships using graph traversal techniques an
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Java**
 - **Princeton Algorithms (algs4) Library**
@@ -17,9 +17,9 @@ This project models linguistic relationships using graph traversal techniques an
 
 ---
 
-## 📂 Project Components
+## Project Components
 
-### 1️⃣ WordNet.java
+### WordNet.java
 Builds a semantic network of English nouns using synsets and hypernym relationships.
 
 **Responsibilities:**
@@ -31,7 +31,7 @@ Builds a semantic network of English nouns using synsets and hypernym relationsh
 
 ---
 
-### 2️⃣ SAP.java (Shortest Ancestral Path)
+### SAP.java (Shortest Ancestral Path)
 Computes the shortest path between two vertices (or vertex sets) that share a common ancestor.
 
 **Key Features:**
@@ -42,7 +42,7 @@ Computes the shortest path between two vertices (or vertex sets) that share a co
 
 ---
 
-### 3️⃣ Outcast.java
+### Outcast.java
 Identifies the noun that is least semantically related to others in a given list.
 
 **Approach:**
@@ -51,5 +51,35 @@ Identifies the noun that is least semantically related to others in a given list
 
 ---
 
-## 📁 File Structure
+## How to Run
+
+### Compile
+```bash
+javac -cp .:algs4.jar *.java
+Run WordNet
+java -cp .:algs4.jar WordNet synsets.txt hypernyms.txt
+Run Outcast
+java -cp .:algs4.jar Outcast synsets.txt hypernyms.txt outcast11.txt
+Algorithms Used
+Breadth-First Search (BFS)
+
+Directed Acyclic Graph (DAG) validation
+
+Topological ordering
+
+Shortest ancestral path computation
+
+Red-Black Binary Search Tree for fast lookup
+
+** Notes**
+Graph validation ensures single root and no cycles
+
+Designed for large datasets
+
+Implements defensive argument checking
+
+Follows modular class design
+
+-Author
+Sai Nishitha Muraharisetty
 
